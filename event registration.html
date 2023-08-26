@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="event registration.css"/>
+    </head>
+    <body>
+        
+            <form>
+                <fieldset>
+                    <h1>Online Registration Form</h1>
+                    <p>If you want to register to this event please do it asap.</p>
+                </fieldset>
+                <fieldset>
+                    <label for="first name">First Name <input id="first name" name="first name" type="text"  class="us"/></label>
+                    <label for="last name">Last Name<input id="last name" name="last name" type="text" class="us" required/></label>
+                    <label for="email">Email<input id="email" name="email" type="email"  class="us" required/></label>
+                    <label for="password">Password<input id="password" name="password" type="password" pattern="[a-z0-5]{8,}" class="us" required/></label>
+                </fieldset>
+                <fieldset>
+                    <p>How many friends will you bring along?</p>
+                    <label for="picking">
+                        <select id="picking" name="picking">
+                            <option value="1">friend</option>
+                            <option value="2">online</option>
+                            <option value="3">stranger</option>
+                        </select>
+                        <p>Pick the time that works for you.</p>
+                        <label for="picking">
+                            <select id="picking" name="picking">
+                                <option value="1" class="you">8am</option>
+                                <option value="2">5pm</option>
+                                <option value="3">8pm</option>
+                            </select>
+                </fieldset>
+                <fieldset>
+                    <p>How did you hear about this event?</p>
+                    <label for="tv"><input id="tv" name="tv" type="radio"/>TV</label>
+                    <label for="friend"><input id="friend" name="friend" type="radio"/>Friend</label>
+                    <label for="advertisement"><input id="advertisement" name="advertisement" type="radio"/>Advertisement</label>
+                </fieldset>
+                <fieldset>
+                    <p>This is the map of the vanue. Please, take a close look of it.</p>
+                    <img src="together.jfif"/>
+                </fieldset>
+                <input type="submit" value="submit">
+            </form>
+    </body>
+</html>
